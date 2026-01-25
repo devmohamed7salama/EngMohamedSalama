@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="Mohamed Salama - Software Engineer & Full-Stack Web Developer. I build modern, responsive, and scalable web applications focusing on performance and user experience.">
+
+    <meta name="keywords"
+        content="Mohamed Salama, Software Engineer, Full-Stack Developer, Web Developer, Portfolio, Mansoura, React Developer, Laravel Developer, UI/UX Design">
+
+    <meta name="author" content="Mohamed Salama">
+    <link rel="dns-prefetch" href="https://wa.me">
+    <link rel="dns-prefetch" href="https://linkedin.com">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mohamed7salama.github.io/">
+    <meta property="og:title" content="Mohamed Salama | Software Engineer Portfolio">
+    <meta property="og:description"
+        content="Discover the projects and skills of Mohamed Salama, a Full-Stack developer specializing in building modern web experiences.">
+    <meta property="og:image" content="https://mohamed7salama.github.io/img/Group 46.png">
+
+
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231a1b26'/><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' font-family='monospace' font-weight='bold' font-size='50' fill='%23C778DD'>MS</text><path d='M30 75 L70 75' stroke='%23C778DD' stroke-width='5' stroke-linecap='round'/></svg>">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <link rel="canonical" href="https://mohamed7salama.github.io/">
+
+    <title>Mohamed salama</title>
+
+    <!-- start google font library  -->
+
+    <!-- end google font library  -->
+
+    <!-- BOOTSTRAB -->
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+
+    <!-- MDB BOOTSTRAB -->
+    <!-- <link rel="stylesheet" href="style/mdb.min.css"> -->
+
+    <!-- fontawsem -->
+    <link rel="stylesheet" href="style/all.min.css">
+
+    <!-- animate -->
+    <link rel="stylesheet" href="style/animate.min.css">
+
+    <!-- wow  -->
+    <link rel="stylesheet" href="style/wow.min.css">
+
+    <!-- style -->
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- navbar -->
+    <div class="navbaar mt-1 w-100">
+
+        <nav
+            class="navbar navblur navbar-expand-md navbar-dark pb-3 pb-md-0 px-3  d-flex  w-75 mx-auto my-4 shadow-sm ">
+            <a class="navbar-brand  d-md-block d-none " href="index.html">
+                <h4 class="font-weight-bolder">Mohamed <span>Salama</span></h4>
+            </a>
+            <a class="navbar-brand w-100  d-md-none d-block" href="index.html">
+                <h4 class="font-weight-bolder text-center w-100">Mohamed <span>Salama</span></h4>
+            </a>
+            <button class="navbar-toggler w-100  m-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item active">
+                        <a class="nav-link text-white-50" href="index.html"><span class="spcolor">#</span> Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link  " href="projects.html"><span class="spcolor">#</span> Projects <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link  text-white-50" href="about.html"><span class="spcolor">#</span> about-me
+                            <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link  text-white-50" href="contact.html"> <span class="spcolor">#</span> Contact
+                            <span class="sr-only">(current)</span></a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- content -->
+
+
+    <!-- start header projects section  -->
+
+    <header class="header-home my-1 py-4 mx-1  ">
+
+        <div class="container ">
+            <div class="row blur pb-md-3 p-4  align-items-center ">
+
+
+                <div class="col-12 text-center">
+                    <h1 class="header-title  wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.2s">
+                        <span class="spcolor">/</span>projects
+                    </h1>
+                    <p class="text-white-50 wow fadeInUp">List of my projects</p>
+                </div>
+
+                <div class="col-12 filter-container pb-2">
+                    <button class="filter-btn active-filter"
+                        onclick="filterProjects('frontend', this)">Front-End</button>
+                    <button class="filter-btn" onclick="filterProjects('backend', this)">Back-End</button>
+                    <button class="filter-btn" onclick="filterProjects('fullstack', this)">Full-Stack</button>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <!-- end header projects section  -->
+
+    <!-- ////////////////////////////// -->
+    <!-- ////////////////////////////// -->
+    <!-- ////////////////////////////// -->
+
+    <!-- start filter section  -->
+
+
+
+    <div id="soon-message" class="container text-center py-3 mt-4 mb-4 d-none">
+        <h2 class="display-4 text-white wow fadeIn">Coming <span class="spcolor">Soon_</span></h2>
+        <p class="text-white-50 mb-5">I'm currently working on these projects. Stay tuned!</p>
+    </div>
+    <!-- end filter section  -->
+
+
+    <!-- ////////////P1////////////////// -->
+    <!-- ////////////////////////////// -->
+    <!-- ////////////////////////////// -->
+
+
+    <!-- start complete projects section  -->
+
+    <section class="section-home my-1 py-3 mx-1 ">
+        <div class="container">
+            <div class="row blur align-items-center py-5 px-4">
+                <!-- Section Header -->
+                <div class="col-12 d-md-block d-none mb-5">
+                    <div class="d-flex justify-content-between  align-items-center flex-wrap">
+                        <div class="section-title-wrapper d-flex align-items-center mb-3 mb-md-0">
+                            <h2 class="section-title mb-0"><span class="spcolor">#</span>complete projects
+                            </h2>
+
+                            <div class="hline "></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 mb-5 d-md-none d-block">
+                    <div class="section-title-wrapper d-flex align-items-center">
+                        <h2 class="section-title mb-0"><span class="spcolor">#</span>Full projects</h2>
+
+                        <div class="hline"></div>
+                    </div>
+                </div>
+
+                <!-- Project Cards -->
+                <div class="col-12">
+                    <div class="row">
+                        <!-- Project Card 1:    construction -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="project-card ">
+                                <div class="project-image">
+                                    <img src="img/Screenshot 2026-01-24 120811.png" alt="construction project">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-tech">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>Bootstrap</span>
+                                        <span>Animate.css</span>
+                                        <span>Wow.js</span>
+                                    </div>
+                                    <h3 class="project-name">CONSTRUCTION</h3>
+                                    <p class="project-description">Tranning project
+                                    </p>
+                                    <div class="project-buttons">
+                                        <a href="https://devmohamed7salama.github.io/construction/" target="_blank"
+                                            class="project-btn">Live →</a>
+                                        <a href="https://github.com/devmohamed7salama/construction" target="_blank"
+                                            class="project-btn">Repo →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2: fooddash -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="project-card ">
+                                <div class="project-image">
+                                    <img src="img/fooddash.png" alt="fooddash resturant">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-tech">
+                                        <span>React.js</span>
+                                        <span>Bootstrap</span>
+                                        <span>css</span>
+                                    </div>
+                                    <h3 class="project-name">FoodDash Resturant</h3>
+                                    <p class="project-description">Training final project</p>
+                                    <div class="project-buttons">
+                                        <a href="https://fooddash-resturant.vercel.app/" target="_blank"
+                                            class="project-btn">Live →</a>
+                                        <a href="https://github.com/devmohamed7salama/FoodDash-Resturant"
+                                            target="_blank" class="project-btn">Repo →</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3: elmore -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="project-card ">
+                                <div class="project-image">
+                                    <img src="img/elmore.png" alt="elmore ecommerse website">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-tech">
+                                        <span>React.js</span>
+                                        <span>Bootstrap</span>
+                                        <span>css</span>
+                                    </div>
+                                    <h3 class="project-name">Elmore ecommerse website</h3>
+                                    <p class="project-description">Ecommerse website</p>
+                                    <div class="project-buttons">
+                                        <a href="https://elmore-0ecommerse.vercel.app/" target="_blank"
+                                            class="project-btn">Live →</a>
+                                        <a href="https://github.com/devmohamed7salama/Elmore-0ecommerse" target="_blank"
+                                            class="project-btn">Repo →</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end complete projects section  -->
+
+
+
+
+    <!-- ////////////P2//////////////// -->
+    <!-- ////////////////////////////// -->
+    <!-- ////////////////////////////// -->
+    <!-- ////////////////////////////// -->
+
+
+    <!-- start small projects section  -->
+
+    <section class="section-home my-1 py-3 mx-1 ">
+        <div class="container">
+            <div class="row blur align-items-center py-5 px-4">
+                <!-- Section Header -->
+                <div class="col-12 d-md-block d-none mb-5">
+                    <div class="d-flex justify-content-between  align-items-center flex-wrap">
+                        <div class="section-title-wrapper d-flex align-items-center mb-3 mb-md-0">
+                            <h2 class="section-title mb-0"><span class="spcolor">#</span>Small projects
+                            </h2>
+
+                            <div class="hline "></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 mb-5 d-md-none d-block">
+                    <div class="section-title-wrapper d-flex align-items-center">
+                        <h2 class="section-title mb-0"><span class="spcolor">#</span>Full projects</h2>
+
+                        <div class="hline"></div>
+                    </div>
+                </div>
+
+                <!-- Project Cards -->
+                <div class="col-12">
+                    <div class="row">
+
+
+                        <!-- Project Card 1: Jobest -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="project-card ">
+                                <div class="project-image">
+                                    <img src="img/jobest.png" alt="Jobest">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-tech">
+                                        <span>Html</span>
+                                        <span>Bootstrap</span>
+                                        <span>css</span>
+                                    </div>
+                                    <h3 class="project-name">Jobest</h3>
+                                    <p class="project-description">Jobest Landing page</p>
+                                    <div class="project-buttons">
+                                        <a href="https://devmohamed7salama.github.io/jobest/" target="_blank"
+                                            class="project-btn">Live →</a>
+                                        <a href="https://github.com/devmohamed7salama/jobest" target="_blank"
+                                            class="project-btn">Repo →</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2: weather -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="project-card ">
+                                <div class="project-image">
+                                    <img src="img/weather.png" alt="weather app">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-tech">
+                                        <span>Html</span>
+                                        <span>Bootstrap</span>
+                                        <span>Js</span>
+                                        <span>css</span>
+                                    </div>
+                                    <h3 class="project-name">Weather App</h3>
+                                    <p class="project-description">A simple weather application using HTML, CSS, and
+                                        JavaScript.</p>
+                                    <div class="project-buttons">
+                                        <a href="https://devmohamed7salama.github.io/weather_app/" target="_blank"
+                                            class="project-btn">Live →</a>
+                                        <a href="https://github.com/devmohamed7salama/weather_app" target="_blank"
+                                            class="project-btn">Repo →</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3: valid -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="project-card ">
+                                <div class="project-image">
+                                    <img src="img/valid.png" alt="validate data">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-tech">
+                                        <span>Html</span>
+                                        <span>Bootstrap</span>
+                                        <span>Js</span>
+                                        <span>css</span>
+                                    </div>
+                                    <h3 class="project-name">Login & Register pages</h3>
+                                    <p class="project-description">Login and registration pages with simple client-side
+                                        validation using JavaScript.</p>
+                                    <div class="project-buttons">
+                                        <a href="https://devmohamed7salama.github.io/valid/" target="_blank"
+                                            class="project-btn">Live →</a>
+                                        <a href="https://github.com/devmohamed7salama/valid" target="_blank"
+                                            class="project-btn">Repo →</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 4: valid -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="project-card ">
+                                <div class="project-image">
+                                    <img src="img/valid22.png" alt="validate data">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-tech">
+                                        <span>Html</span>
+                                        <span>Bootstrap</span>
+                                        <span>Js</span>
+                                        <span>css</span>
+                                    </div>
+                                    <h3 class="project-name">Login & Register pages</h3>
+                                    <p class="project-description">Login and registration pages with simple client-side
+                                        validation using JavaScript.</p>
+                                    <div class="project-buttons">
+                                        <a href="https://devmohamed7salama.github.io/js-validation/" target="_blank"
+                                            class="project-btn">Live →</a>
+                                        <a href="https://github.com/devmohamed7salama/js-validation" target="_blank"
+                                            class="project-btn">Repo →</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 5: Api -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="project-card ">
+                                <div class="project-image">
+                                    <img src="img/api.png" alt="api">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-tech">
+                                        <span>Html</span>
+                                        <span>Bootstrap</span>
+                                        <span>Js</span>
+                                        <span>css</span>
+                                    </div>
+                                    <h3 class="project-name">API integration</h3>
+                                    <p class="project-description">Consuming REST API using JavaScript and rendering
+                                        dynamic data with a clean, responsive UI.</p>
+                                    <div class="project-buttons">
+                                        <a href="https://devmohamed7salama.github.io/Apitsask/" target="_blank"
+                                            class="project-btn">Live →</a>
+                                        <a href="https://github.com/devmohamed7salama/Apitsask" target="_blank"
+                                            class="project-btn">Repo →</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 6: JustStay -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="project-card ">
+                                <div class="project-image">
+                                    <img src="img/JustStay.png" alt="api">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-tech">
+                                        <span>Html</span>
+                                        <span>Bootstrap</span>
+                                        <span>css</span>
+                                    </div>
+                                    <h3 class="project-name">JustStay Hotel</h3>
+                                    <p class="project-description">Hotel simple Landing page</p>
+                                    <div class="project-buttons">
+                                        <a href="https://devmohamed7salama.github.io/Jusstay" target="_blank"
+                                            class="project-btn">Live →</a>
+                                        <a href="https://github.com/devmohamed7salama/Jusstay" target="_blank"
+                                            class="project-btn">Repo →</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 7: youtube clone -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="project-card ">
+                                <div class="project-image">
+                                    <img src="img/youtube.png" alt="youtube clone">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-tech">
+                                        <span>Html</span>
+                                        <span>Bootstrap</span>
+                                        <span>css</span>
+                                    </div>
+                                    <h3 class="project-name">Youtube Clone</h3>
+                                    <p class="project-description">YouTube Home page Clone UI inspired by Godzilla’s
+                                        content,
+                                        built for learning and frontend practice purposes.</p>
+                                    <div class="project-buttons">
+                                        <a href="https://devmohamed7salama.github.io/YoutubeCLone/" target="_blank"
+                                            class="project-btn">Live →</a>
+                                        <a href="https://github.com/devmohamed7salama/YoutubeCLone" target="_blank"
+                                            class="project-btn">Repo →</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 8: order card -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="project-card ">
+                                <div class="project-image">
+                                    <img src="img/orderCard.png" alt="order card">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-tech">
+                                        <span>Html</span>
+                                        <span>css</span>
+                                    </div>
+                                    <h3 class="project-name">Order Card</h3>
+                                    <p class="project-description">Simple order card UI with responsive design.</p>
+                                    <div class="project-buttons">
+                                        <a href="https://devmohamed7salama.github.io/OrderCard/" target="_blank"
+                                            class="project-btn">Live →</a>
+                                        <a href="https://github.com/devmohamed7salama/OrderCard" target="_blank"
+                                            class="project-btn">Repo →</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 9: small simple dashboard -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="project-card ">
+                                <div class="project-image">
+                                    <img src="img/std-Dashboard.png" alt="Dashboard">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-tech">
+                                        <span>Html</span>
+                                        <span>css</span>
+                                    </div>
+                                    <h3 class="project-name">Students mangment dashboard</h3>
+                                    <p class="project-description">small simple dashboard</p>
+                                    <div class="project-buttons">
+                                        <a href="https://devmohamed7salama.github.io/std-dashboard/" target="_blank"
+                                            class="project-btn">Live →</a>
+                                        <a href="https://github.com/devmohamed7salama/std-dashboard" target="_blank"
+                                            class="project-btn">Repo →</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end small projects section  -->
+
+
+
+    <!-- ////////////////////////////// -->
+    <!-- ////////////////////////////// -->
+    <!-- ////////////////////////////// -->
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-text">
+                        Copyright © 2025 <span class="spcolor">Mohamed Salama</span>. All rights reserved.
+                    </p>
+                </div>
+                <div class="footer-divider"></div>
+                <div class="footer-social">
+                    <a href="https://github.com/devmohamed7salama" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="www.linkedin.com/in/mohamed-khairy-a97169334" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:dev.mohamed.salama7@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/201016981295
+                        " class="social-link" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <button class="back-to-top " id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- jquery -->
+    <script src="js/jquery.slim.min.js"></script>
+    <!-- popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrab -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- mdb bootstrab -->
+    <script src="js/mdb.min.js"></script>
+    <!-- fontawsome -->
+    <script src="js/all.min.js"></script>
+    <!-- wow animation -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- main -->
+    <script src="js/main.js"></script>
+
+    <script>
+        (function () {
+            const backToTopButton = document.getElementById('backToTop');
+            const scrollThreshold = 70; // يظهر الزرار بعد سكرول 400 بكسل
+
+            // دالة مراقبة السكرول
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > scrollThreshold) {
+                    backToTopButton.classList.add('show');
+                } else {
+                    backToTopButton.classList.remove('show');
+                }
+            });
+
+            // دالة الضغط على الزرار
+            backToTopButton.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' // طلوع انسيابي
+                });
+            });
+        })();
+    </script>
+</body>
+
+</html>

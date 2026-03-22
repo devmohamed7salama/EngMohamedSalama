@@ -115,14 +115,15 @@ body {
 /* إخفاء الماوس المخصص على الشاشات اللمس (الموبايل) عشان ميضايقش المستخدم */
 @media (max-width: 1024px) {
 
-  .cursor-dot,
-  .cursor-outline {
-    display: none;
-  }
 
   html,
   body {
     cursor: auto;
+  }
+
+  .cursor-dot,
+  .cursor-outline {
+    display: none;
   }
 }
 
@@ -694,19 +695,20 @@ body {
 }
 
 .about-image {
+  border-radius: 40px;
   width: 100%;
   max-width: 300px;
   /* height: auto; */
   /* height: 500px !important; */
   display: block;
-  margin: 0 auto;
-  position: relative;
+  margin: 0px auto;
+  /* position: relative; */
   z-index: 2;
 }
 
 .about-image-decoration {
   position: absolute;
-  bottom: -10px;
+  bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
